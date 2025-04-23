@@ -1,7 +1,9 @@
-console.log("Hello, world!");
-console.log("This is a test.");
-
-
+// Rock, Paper, Scissors Game
+// This is a simple implementation of the classic game "Rock, Paper, Scissors".
+// The game allows a player to play against the computer for a set number of rounds.
+// The player can choose rock, paper, or scissors, and the computer makes a random choice.
+// The game keeps track of the score and announces the winner at the end.
+// The player can also choose to play again after the game ends.
 const options = ["rock", "paper", "scissors"];
 
 let playerScore = 0;
@@ -30,7 +32,6 @@ function playRound(playerSelection, computerSelection) {
     return `You lose! ${computerSelection} beats ${playerSelection}`;
   }
 }
-
 function game() {
   while (rounds < maxRounds) {
     const input = prompt("Enter rock, paper, or scissors:");
