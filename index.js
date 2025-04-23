@@ -30,9 +30,15 @@ function playRound(playerSelection, computerSelection) {
     return `You lose! ${computerSelection} beats ${playerSelection}`;
   }
 }
+
 function game() {
   while (rounds < maxRounds) {
-    playerChoice = prompt("Enter rock, paper, or scissors:").toLowerCase();
+    const input = prompt("Enter rock, paper, or scissors:");
+    if (input === null) {
+      console.log("Game canceled by the user.");
+      return; // Exit the game if the user cancels
+    }
+    playerChoice = input.toLowerCase();
     if (!options.includes(playerChoice)) {
       console.log("Invalid choice. Please try again.");
       continue;
@@ -75,9 +81,12 @@ function startGame() {
   console.log("Welcome to Rock, Paper, Scissors!");
   console.log(`You have ${maxRounds} rounds to play.`);
   game();
-  const result = checkResult();
-  console.log(result);
-  const playAgain = prompt("Do you want to play again? (yes/no)").toLowerCase();
+  const input = prompt("Do you want to play again? (yes/no)");
+  if (input === null) {
+    console.log("Game canceled by the user.");
+    return; // Exit if the user cancels
+  }
+  const playAgain = input.toLowerCase();
   if (playAgain === "yes") {
     resetGame();
     startGame();
