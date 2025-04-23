@@ -61,3 +61,77 @@ This project is a simple implementation of the classic "Rock, Paper, Scissors" g
 5. After the game ends, you will be asked if you want to play again. Enter "yes" to restart or "no" to exit.
 
 ---
+
+
+
+The New Updated Version can be played from the webpage.
+
+
+# Rock Paper Scissors Project
+
+This project is a simple implementation of the classic "Rock, Paper, Scissors" game. The game is now playable directly from a webpage, where the user interacts with buttons representing "rock," "paper," and "scissors." The project has been further enhanced with new features and improvements.
+
+---
+
+## Additional Changes Since the Last Commit
+
+### 1. **Web-Based Gameplay**
+- The game has been updated to allow the user to play directly from the webpage by clicking on images representing "rock," "paper," and "scissors."
+- The `index.html` file was modified to include buttons with images for each choice (rock, paper, scissors). Each button is linked to the game logic via the `onclick` attribute.
+
+### 2. **Dynamic Score Updates**
+- The game now dynamically updates the scores for both the player and the computer on the webpage.
+- The `index.js` file was updated to manipulate the DOM and display the current scores and results in real-time.
+
+### 3. **Result Display**
+- The result of each round is displayed in a dedicated message area on the webpage.
+- A final message is shown when either the player or the computer reaches 5 points, declaring the winner.
+
+### 4. **Game Reset**
+- After the game ends, the scores and result message are reset automatically, allowing the user to start a new game without refreshing the page.
+
+---
+
+## How to Play the New Web-Based Game
+
+1. Open the `index.html` file in a browser.
+2. You will see three buttons with images representing "rock," "paper," and "scissors."
+3. Click on one of the buttons to make your choice.
+4. The computer will make a random choice, and the result of the round will be displayed on the screen.
+5. The scores for both the player and the computer will update dynamically.
+6. The game continues until either the player or the computer reaches 5 points.
+7. Once the game ends, a final message will be displayed announcing the winner.
+8. The game will automatically reset, allowing you to play again.
+
+---
+
+## Example Gameplay
+1. **Initial Screen**:
+   - The scoreboard shows `0:0` for the player and computer scores.
+   - The result message displays "Result: ?".
+
+2. **During Gameplay**:
+   - After clicking "rock," the result might display: "You win! rock beats scissors."
+   - The scoreboard updates to reflect the new scores.
+
+3. **Game Over**:
+   - When the player reaches 5 points, the message displays: "Congratulations! You won the game!"
+   - The game resets automatically for a new round.
+
+---
+
+## Lessons Learned
+- Transitioning from a console-based game to a web-based game requires integrating JavaScript with HTML and manipulating the DOM.
+- Adding interactivity through event listeners (e.g., `onclick`) enhances the user experience.
+- Dynamic updates to the webpage (e.g., scores and messages) make the game more engaging and user-friendly.
+
+---
+
+## Future Enhancements
+- Add animations or sound effects for each choice to make the game more interactive.
+- Allow the user to set custom rules, such as the number of rounds required to win.
+- Add a leaderboard to track high scores across multiple games.
+
+---
+
+Enjoy playing the updated Rock Paper Scissors game directly from your browser!
